@@ -108,6 +108,7 @@ py_library(
         ],
     ),
     srcs_version = "PY2AND3",
+    visibility = ["//visibility:public"],
     deps = [
         ":lib",
         ":pywrap_tensorflow",
@@ -432,6 +433,7 @@ py_library(
         "framework/meta_graph.py",
     ],
     srcs_version = "PY2AND3",
+    visibility = ["//visibility:public"],
     deps = [
         ":common_shapes",
         ":cpp_shape_inference_proto_py",
@@ -2239,6 +2241,7 @@ py_library(
     name = "ops",
     srcs = ["user_ops/user_ops.py"],
     srcs_version = "PY2AND3",
+    visibility = ["//visibility:public"],
     deps = [
         ":user_ops_gen",
         "@six_archive//:six",
@@ -2598,6 +2601,7 @@ py_library(
         ],
     ),
     srcs_version = "PY2AND3",
+    visibility = ["//visibility:public"],
     deps = [
         "//third_party/py/numpy",
         "@org_python_pypi_backports_weakref",
