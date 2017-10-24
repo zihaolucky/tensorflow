@@ -125,6 +125,7 @@ py_library(
         ],
     ) + ["platform/build_info.py"],
     srcs_version = "PY2AND3",
+    visibility = ["//visibility:public"],
     deps = [
         ":lib",
         ":pywrap_tensorflow",
@@ -511,6 +512,7 @@ py_library(
         "framework/meta_graph.py",
     ],
     srcs_version = "PY2AND3",
+    visibility = ["//visibility:public"],
     deps = [
         ":common_shapes",
         ":cpp_shape_inference_proto_py",
